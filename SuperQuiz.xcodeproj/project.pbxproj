@@ -17,6 +17,8 @@
 		BBB5F779281764E400AB9B9A /* SuperQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB5F778281764E400AB9B9A /* SuperQuizTests.m */; };
 		BBB5F783281764E400AB9B9A /* SuperQuizUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB5F782281764E400AB9B9A /* SuperQuizUITests.m */; };
 		BBB5F785281764E400AB9B9A /* SuperQuizUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB5F784281764E400AB9B9A /* SuperQuizUITestsLaunchTests.m */; };
+		BBB5F7962817680200AB9B9A /* QuizBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB5F7952817680200AB9B9A /* QuizBrain.m */; };
+		BBB5F79A28176A3100AB9B9A /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB5F79928176A3100AB9B9A /* Quiz.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		BBB5F77E281764E400AB9B9A /* SuperQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB5F782281764E400AB9B9A /* SuperQuizUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperQuizUITests.m; sourceTree = "<group>"; };
 		BBB5F784281764E400AB9B9A /* SuperQuizUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperQuizUITestsLaunchTests.m; sourceTree = "<group>"; };
+		BBB5F7942817680200AB9B9A /* QuizBrain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizBrain.h; sourceTree = "<group>"; };
+		BBB5F7952817680200AB9B9A /* QuizBrain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizBrain.m; sourceTree = "<group>"; };
+		BBB5F79828176A3100AB9B9A /* Quiz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
+		BBB5F79928176A3100AB9B9A /* Quiz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +110,13 @@
 		BBB5F75B281764E300AB9B9A /* SuperQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				BBB5F793281767D200AB9B9A /* Controller */,
+				BBB5F792281767CE00AB9B9A /* View */,
+				BBB5F791281767C800AB9B9A /* Model */,
 				BBB5F75C281764E300AB9B9A /* AppDelegate.h */,
 				BBB5F75D281764E300AB9B9A /* AppDelegate.m */,
 				BBB5F75F281764E300AB9B9A /* SceneDelegate.h */,
 				BBB5F760281764E300AB9B9A /* SceneDelegate.m */,
-				BBB5F762281764E300AB9B9A /* ViewController.h */,
-				BBB5F763281764E300AB9B9A /* ViewController.m */,
-				BBB5F765281764E300AB9B9A /* Main.storyboard */,
 				BBB5F768281764E400AB9B9A /* Assets.xcassets */,
 				BBB5F76A281764E400AB9B9A /* LaunchScreen.storyboard */,
 				BBB5F76D281764E400AB9B9A /* Info.plist */,
@@ -134,6 +140,34 @@
 				BBB5F784281764E400AB9B9A /* SuperQuizUITestsLaunchTests.m */,
 			);
 			path = SuperQuizUITests;
+			sourceTree = "<group>";
+		};
+		BBB5F791281767C800AB9B9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBB5F7942817680200AB9B9A /* QuizBrain.h */,
+				BBB5F7952817680200AB9B9A /* QuizBrain.m */,
+				BBB5F79828176A3100AB9B9A /* Quiz.h */,
+				BBB5F79928176A3100AB9B9A /* Quiz.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BBB5F792281767CE00AB9B9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BBB5F765281764E300AB9B9A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BBB5F793281767D200AB9B9A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBB5F762281764E300AB9B9A /* ViewController.h */,
+				BBB5F763281764E300AB9B9A /* ViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +303,8 @@
 				BBB5F764281764E300AB9B9A /* ViewController.m in Sources */,
 				BBB5F75E281764E300AB9B9A /* AppDelegate.m in Sources */,
 				BBB5F76F281764E400AB9B9A /* main.m in Sources */,
+				BBB5F7962817680200AB9B9A /* QuizBrain.m in Sources */,
+				BBB5F79A28176A3100AB9B9A /* Quiz.m in Sources */,
 				BBB5F761281764E300AB9B9A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
